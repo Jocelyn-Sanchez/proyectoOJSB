@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Odalys Jocelyn Sanchez Benitez"> 
+    <meta name="description" content="Vida de Van Gogh"> 
+    <meta name="keywords" content="hml, Van Gogh, la noche estrellada, sitio web, arte" >
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>¿Qué obra te representa?</title>
+</head>
+<body>
+    <header>
+        <h2>Cuentanos cual es tu obra favorita o con cual te indentificas</h2>
+        <p><i>"Lo que se hace con el corazón se hace bien."</i></p>
+        <br>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="biografia.html">Conoce su vida</a>
+            <a href="obras.html">Explora sus obras</a>
+            <a href="suestilo.html">Descubre su estilo</a>
+            <a href="formulario.html">¿Qué obra te representa?</a>
+            <a href="acercade.html">Acerca de</a>
+        </nav>
+    </header>
+
+    <main>
+        <section style="text-align: center;">
+        <i>
+            Cada pintura de Vincent van Gogh transmite una emoción distinta: alegría, tristeza, esperanza o calma. <br>
+            ¿Con cuál de sus obras te identificas más? <br>
+            Completa el siguiente formulario y cuéntanos qué sientes al ver el arte de este gran pintor. <br>
+        </i>
+        </section>
+
+        <form class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre completo">
+
+            <label for="edad">Edad:</label>
+            <input type="text" name="edad" id="edad" placeholder="Escribe tu edad">
+
+            <br><br>
+            <label for="obra">Obra favorita:</label>
+            <select name="obra" id="obra">
+                <option value="noche_estrellada">La noche estrellada</option>
+                <option value="Girasoles">Los girasoles</option>
+                <option value="DormitorioArles">El dormitorio en Arlés</option>
+                <option value="autorretraro">Autorretrato con oreja vendada</option>
+                <option value="campo">Campo de trigo con cuervos</option>
+            </select>
+
+            <br><br>
+            <div class="opciones">
+                <h4><p>¿Qué emocion te transmite el arte de Van Gogh?</p></h4>
+                <label><input type="radio" name="emocion" id="emocion" value="Alegria">Alegría y energía</label>
+                <label><input type="radio" name="emocion" id="emocion" value="paz">Calma y paz</label>
+                <label><input type="radio" name="emocion" id="emocion" value="tristeza">Tristeza o melancolía</label>
+                <label><input type="radio" name="emocion" id="emocion" value="esp">Inspiración o esperanza</label>
+             </div>
+
+             <br><br>
+             <div class="opciones">
+                <h4><p>¿Qué temas te gustan más en las pinturas de Van Gogh?</p></h4>
+                <label><input type="checkbox" name="interes" value="NyF">Naturaleza y flores</label>
+                <label><input type="checkbox" name="interes" value="CyE">El cielo y las estrellas</label>
+                <label><input type="checkbox" name="interes" value="Au">Autorretratos</label>
+                <label><input type="checkbox" name="interes" value="Vida">La vida cotidiana</label>
+            </div>
+
+            <br><br>
+            <label for="mesaje">¿Qué sientes al ver las obras de Van Gogh?</label> <br>
+            <textarea name="mensaje" id="mensaje" rows="8" cols="40" placeholder="Escribe aquí tu respuesta"></textarea>
+        </form>
+    </main>
+    <footer>
+        <p>Sánchez Benitez Odalys Jocelyn © 2025 | Entre estrellas y pinceles</p>
+    </footer>
+</body>
+</html>
