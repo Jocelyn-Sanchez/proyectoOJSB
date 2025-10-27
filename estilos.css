@@ -1,0 +1,182 @@
+
+/* --- ESTILO GENERAL --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(180deg, #c6cfff 0%, #00668d 100%);
+    color: #120907; /*Letras*/
+}
+
+/* --- ENCABEZADO Y NAVEGACIÓN --- */
+header {
+    background: linear-gradient(90deg, #191e36, #4a5889);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fffbc9;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e38815;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section, aside {
+    background-color: #d3e1ea;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    flex: 1 1 45%;
+}
+
+article {
+    margin-bottom: 1rem;
+    border-left: 4px solid #12434a; /*Borde de la linea junto a los articulos*/
+    padding-left: 1rem;
+}
+
+/* --- FORMULARIOS --- */
+form {
+    background-color: #f7f9fb;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button{
+    background-color:#96a4df; /*Color de fondo */
+    color: black; /*Color de texto en blanco*/
+    border: none; /*Sin borde*/
+    padding: 0.5rem 1.2rem; /*Relleno interno*/
+    border-radius: 10px; /*Bordes redondeados*/
+    cursor: pointer; /*Cambia el cursor al pasar sobre el boton */
+    font-size: 1rem; /*Tamaño de la fuente*/
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+.tarjeta {
+    background-color: #9c578b; /* Fondo de la tarjeta */
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0.4px 10px rgba(0, 0, 0, 0.1); /* Agrega sombra a la tarjeta */
+    transition: transform 0.3s ease;
+}
+
+.formulario
+{
+    background-color: white(5, 16, 53);
+    width: 330%;
+    max-width: 900px;
+    margin: 2 rem auto;
+    padding: 2 rem;
+    border-radius: 15px;
+    box-shadow: 0.4px 12px white(0, 0, 0, 0.1);
+
+}
+
+/* --- IMÁGENES --- */
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+aside {
+    background-color: #f8efd7;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    color: #011729;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside ul li a {
+    color: #060606;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: #1d2234;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    section, aside {
+        flex: 1 1 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
